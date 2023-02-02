@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Java",
+    "description": "Took java masterclass and became comfortable building with it.",
+    "impact": "Learned java fundamentals.",
+    "highlight": true,
+    "yearMonth": "2023-01",
+    "updatedAt": "01-25-2023"
+  },
+  {
+    "title": "SpringBoot and React",
+    "description": "Created a SpringBoot and React application to strengthen my learning.",
+    "impact": "Learned SpringBoot API development and refresh React skills.",
+    "highlight": true,
+    "yearMonth": "2023-02",
+    "updatedAt": "02-02-2023"
+  }
+]

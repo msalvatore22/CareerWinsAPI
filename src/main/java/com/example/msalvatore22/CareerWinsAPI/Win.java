@@ -19,7 +19,8 @@ public class Win {
     private ObjectId id;
     private String title;
     private String description;
+    private String impact;
     private Boolean highlight;
-    private YearMonth yearMonth;
-    private LocalDate updatedAt;
+    private String yearMonth;
+    private String updatedAt;
 }
