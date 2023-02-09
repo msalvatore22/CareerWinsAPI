@@ -22,8 +22,27 @@ public class WinService {
         return winRepository.findById(objectId);
     }
 
-    public Win saveOrUpdateWin(Win win) {
+    public Win saveWin(Win win) {
         return winRepository.save(win);
     }
 
+    public Win updateWinById(ObjectId objectId, Win win){
+
+        Optional<Win> winLookup = winRepository.findById(objectId);
+
+        Win winValues = winLookup.get();
+
+        winValues.setTitle(win.getTitle());
+        winValues.setDescription(win.getDescription());
+        winValues.setYearMonth(win.getYearMonth());
+        winValues.setHighlight(win.getHighlight());
+        winValues.setImpact(win.getImpact());
+        winValues.setUpdatedAt(win.getUpdatedAt());
+
+        return winRepository.save(winValues);
+    }
+    public String deleteById(ObjectId objectId) {
+        winRepository.deleteById(objectId);
+        return "Deleted successfully";
+    }
 }
